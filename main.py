@@ -23,9 +23,9 @@ class User(db.Model):
 def hello_world():
     return render_template('home.html', subtitle='Home Page', text='This is the home page')
     
-@app.route("/second_page")
+@app.route("/about")
 def second_page():
-    return render_template('second_page.html', subtitle='Second Page', text='This is the second page')
+    return render_template('about.html', subtitle='About Page', text='This is the about page')
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
